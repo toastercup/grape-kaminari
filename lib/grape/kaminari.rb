@@ -24,7 +24,7 @@ module Grape
           options.reverse_merge!(
             per_page: ::Kaminari.config.default_per_page || 10,
             max_per_page: ::Kaminari.config.max_per_page,
-            offset: 0
+            offset: 10
           )
           params do
             optional :page,     type: Integer, default: 1,
